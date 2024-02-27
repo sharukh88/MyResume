@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/background-pic.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    width: 1024px;
+    height: 380px;
+    text-align: center;
+  }
+
+  .overlay p{
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .overlay h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+#linkln{
+  height: 50px;
+  width: 50px;
+  margin-top: 50px; 
+  border-radius: 10px;
+}
+
+#TrulyYogurt{
+  height: 50px;
+  width: 50px;
+  margin-top: 50px; 
+  margin-left: 20px;
+  border-radius: 10px; 
+}
+
+/*--------ABOUT ME---------------*/
+.about-me {
+    display: flex;
+    background-color: #A7BEAE;
+    padding: 30px;
+    padding-left: 200px;
+    width: 100%;
+   
+}
+
+.about-me-content {
+    padding-right: 400px;
+    padding-left: 100px;
+    margin-top: 30px;
+}
+
+.about-me-content p {
+  margin-top: 5px;
+  line-height: 1.5;
+  font-family: "Gill Sans", sans-serif;
+}
+
+#profile-picture {
+    width: 140px; 
+    height: 160px; 
+    border-radius: 10px; 
+    margin-top: 50px;
+  }
+
+
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+}
+
+/*------EDUCATION---------------*/
+
+.resume {
+  padding: 96px 32px;
+  width: 1244px;
+  height: 2390px;
+  margin-left: 200px;
+  margin-right: 300px;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.education-section h2{
+  font-family: Georgia, serif;
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.education-entry {
+  width: fit-content;
+  margin-bottom: 20px; 
+  margin-left: 240px;
+  padding: 10px; 
+  color: #444;
+}
+
+.education-entry h3 {
+  margin-bottom: 5px; 
+  font-size: 20px;
+}
+
+.education-entry p {
+  margin: 0; 
+  line-height: 1.4; 
+  font-size: 14px;
+}
+
+.education-entry:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+
+/*-------WORK-----------------*/
+
+.work-experience-section{
+  display: flex;
+  flex-direction: column; 
+  font-size: 15px;
+}
+
+.work-experience-section h2{
+  font-family: Georgia, serif;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.work-experience-entry {
+  width: fit-content; 
+  margin-top: 5px;
+  margin-left: 240px;
+  padding: 10px; 
+  color: #444;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+.work-experience-entry h3  {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.work-experience-entry ul{
+  margin-top: 20px;
+  font-size: large;
+}
+.work-experience-entry ul li {
+  margin-bottom: 10px;
+}
+
+.work-experience-entry:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/*-------------SKILL--------------------------------*/
+
+.skill-section{
+  margin-top: 30px;
+}
+
+.skill-section h2{
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.skill-section p{
+  margin-top: 20px;
+}
+
+
+.container {
+  width: 100%; 
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white;
+}
+
+.java {width: 90%; background-color: orange;} 
+.python {width: 90%; background-color: #a6a616;} 
+.sql {width: 75%; background-color: #f44336;} 
+.c {width: 60%; background-color: #808080;} 
+.AS{width: 85%; background-color: aquamarine;}
+.ANTLR{width: 70%; background-color: pink;}
+
+/*-------------ACHIEVEMENT--------------------------------*/
+.achievement-section{
+  margin-top: 30px;
+}
+
+.achievement-section h2{
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+
+/*-------------Contact--------------------------------*/
+.contact-section {
+  margin-top: 140px;
+  background-color: #262626;
+  height: 600px;
+}
+
+.mail-container {
+  position: absolute;
+  width: 600px;
+  margin-right: 600px;
+  margin-top: 50px;
+  margin-left: 300px;
+  background-color: #262626;
+  border-radius: 100px;
+}
+
+#mail-h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+  background-color: gray;
+  color: white; 
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+#send-button {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.my-info {
+  float: right;
+  width: 300px; 
+  margin-right: 250px;
+  margin-top: 200px;
+  background-color: #262626;
+  color: white;
+}
+
+.my-info h3 {
+  margin-bottom: 10px;
+}
+
+.my-info p {
+  margin-bottom: 10px;
+}
+
+/*---FOOTER---------*/
+footer {
+  background-color: #333;
+  color: grey;
+  text-align: center;
+  padding: 20px;
+}
